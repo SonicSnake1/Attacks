@@ -1,0 +1,5 @@
+msfpc - shows instructions on how to use the msfvenome payload creator (usr/bin/msfpc <dll/Windows> <ip> <port> <Verbose>)
+
+msconsole -q -r <.rc file locations>
+
+
