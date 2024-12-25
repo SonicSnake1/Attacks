@@ -1,0 +1,3 @@
+Secret Pass: LoganSucks
+Enable: Password123
+Virtual Term: Password321
