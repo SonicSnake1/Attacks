@@ -5,7 +5,7 @@ Add-Type -AssemblyName PresentationFramework
 $popup = New-Object -TypeName System.Windows.Window
 $popup.Title = "Login Verification"
 $popup.Width = 400
-$popup.Height = 50
+$popup.Height = 100
 $popup.WindowStartupLocation = "CenterScreen"
 
 $label = New-Object -TypeName System.Windows.Controls.Label
@@ -19,8 +19,8 @@ $button.Add_Click({
     # Create the pop up window for entering username and password
     $credentials = New-Object -TypeName System.Windows.Window
     $credentials.Title = "Enter Credentials"
-    $credentials.Width = 300
-    $credentials.Height = 300
+    $credentials.Width = 200
+    $credentials.Height = 200
     $credentials.WindowStartupLocation = "CenterScreen"
 
     $usernameLabel = New-Object -TypeName System.Windows.Controls.Label
