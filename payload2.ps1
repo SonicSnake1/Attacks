@@ -5,7 +5,7 @@ Add-Type -AssemblyName PresentationFramework
 $popup = New-Object -TypeName System.Windows.Window
 $popup.Title = "Login Verification"
 $popup.Width = 400
-$popup.Height = 150
+$popup.Height = 300
 $popup.WindowStartupLocation = "CenterScreen"
 
 $label = New-Object -TypeName System.Windows.Controls.Label
