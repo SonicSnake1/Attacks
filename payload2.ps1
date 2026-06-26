@@ -5,7 +5,7 @@ Add-Type -AssemblyName PresentationFramework
 $popup = New-Object -TypeName System.Windows.Window
 $popup.Title = "Login Verification"
 $popup.Width = 400
-$popup.Height = 200
+$popup.Height = 50
 $popup.WindowStartupLocation = "CenterScreen"
 
 $label = New-Object -TypeName System.Windows.Controls.Label
@@ -25,21 +25,21 @@ $button.Add_Click({
 
     $usernameLabel = New-Object -TypeName System.Windows.Controls.Label
     $usernameLabel.Content = "Username:"
-    $usernameLabel.Margin = "10"
+    $usernameLabel.Margin = "20"
 
     $usernameTextBox = New-Object -TypeName System.Windows.Controls.TextBox
-    $usernameTextBox.Margin = "10"
+    $usernameTextBox.Margin = "20"
 
     $passwordLabel = New-Object -TypeName System.Windows.Controls.Label
     $passwordLabel.Content = "Password:"
-    $passwordLabel.Margin = "10"
+    $passwordLabel.Margin = "20"
 
     $passwordBox = New-Object -TypeName System.Windows.Controls.PasswordBox
-    $passwordBox.Margin = "10"
+    $passwordBox.Margin = "20"
 
     $submitButton = New-Object -TypeName System.Windows.Controls.Button
     $submitButton.Content = "Submit"
-    $submitButton.Margin = "10"
+    $submitButton.Margin = "20"
     $submitButton.Add_Click({
         $username = $usernameTextBox.Text
         $password = $passwordBox.Password
